@@ -3,5 +3,64 @@
 @tailwind utilities;
 /* 可以在這邊撰寫一般css( 但不建議 )*/
 /* 請用 apply 來直接運用tailwindcss已經有的class，以盡量避免多寫css */
+/* html{
+  scroll-behavior: smooth
+} */
+/* Typography systems */
+.text-mega{
+  @apply text-[3rem];
+}
+.text-h1{
+  @apply text-[2.5rem]
+}
+.text-h2{
+  @apply text-[2rem]
+}
+.text-h3{
+  @apply text-[1.5rem]
+}
+.text-body{
+  @apply text-base
+}
+.text-small{
+  @apply text-[0.75rem]
+}
+
+/* 字型 */
+@font-face {
+  font-family: 'NotoSansCJKtc-Black';
+  src: url('./assets/fonts/NotoSansCJKtc-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Bold';
+  src: url('./assets/fonts/NotoSansCJKtc-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-DemiLight';
+  src: url('./assets/fonts/NotoSansCJKtc-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Light';
+  src: url('./assets/fonts/NotoSansCJKtc-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Medium';
+  src: url('./assets/fonts/NotoSansCJKtc-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Regular';
+  src: url('./assets/fonts/NotoSansCJKtc-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Thin';
+  src: url('./assets/fonts/NotoSansCJKtc-Thin.otf') format('opentype');
+}
+
 
 
