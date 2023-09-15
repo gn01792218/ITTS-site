@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         'title':'#004187',
-        'acent':"#F8CB6D"
+        'acent':"#F8CB6D",
+        'body':'#595757'
       },
       fontFamily: {
         notosnscjktcblack: ["NotoSansCJKtc-Black"],
