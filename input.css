@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 可以在這邊撰寫一般css( 但不建議 )*/
+/* 請用 apply 來直接運用tailwindcss已經有的class，以盡量避免多寫css */
+
+
