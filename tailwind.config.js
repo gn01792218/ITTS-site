@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       colors:{
         'title':'#004187',
+        'subtitle':'#011731',
         'acent':"#F8CB6D",
-        'body':'#595757'
+        'acentred':'#C30D23',
+        'text':'#595757'
       },
       fontFamily: {
         notosnscjktcblack: ["NotoSansCJKtc-Black"],
@@ -16,6 +18,10 @@ module.exports = {
         notosnscjktcMedium: ["NotoSansCJKtc-Medium"],
         notosnscjktcRegular: ["NotoSansCJKtc-Regular"],
         notosnscjktcThin: ["NotoSansCJKtc-Thin"],
+      },
+      screens:{
+        '2xs':'375px',
+        'xs':'414px'
       }
     },
   },

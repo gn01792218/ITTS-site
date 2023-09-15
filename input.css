@@ -11,7 +11,7 @@
   @apply text-[3rem];
 }
 .text-h1{
-  @apply text-[2.5rem]
+  @apply text-[2.25rem]
 }
 .text-h2{
   @apply text-[2rem]
@@ -19,8 +19,14 @@
 .text-h3{
   @apply text-[1.5rem]
 }
+.text-h4{
+  @apply text-[1.3rem]
+}
+.text-h5{
+  @apply text-[1.15rem]
+}
 .text-body{
-  @apply text-base
+  @apply text-[1rem]
 }
 .text-small{
   @apply text-[0.75rem]
