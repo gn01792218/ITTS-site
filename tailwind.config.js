@@ -7,7 +7,10 @@ module.exports = {
         'title':'#004187',
         'subtitle':'#011731',
         'acent':"#F8CB6D",
+        'acenttag':"#F8B62D",
         'acentred':'#C30D23',
+        'acenttext':'#F39800',
+        'acentbutton':'#F0BE2D',
         'text':'#595757'
       },
       fontFamily: {
