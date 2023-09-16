@@ -2,34 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 /* 可以在這邊撰寫一般css( 但不建議 )*/
-/* 請用 apply 來直接運用tailwindcss已經有的class，以盡量避免多寫css */
-/* html{
-  scroll-behavior: smooth
-} */
-/* Typography systems */
-.text-mega{
-  @apply text-[3rem];
-}
-.text-h1{
-  @apply text-[2.25rem]
-}
-.text-h2{
-  @apply text-[2rem]
-}
-.text-h3{
-  @apply text-[1.5rem]
-}
-.text-h4{
-  @apply text-[1.3rem]
-}
-.text-h5{
-  @apply text-[1.15rem]
-}
-.text-body{
-  @apply text-[1rem]
-}
-.text-small{
-  @apply text-[0.75rem]
+/* 請用 @layer utilities 內寫自己的class，並搭配 @apply，盡量使用tailwindcss的class避免多寫css */
+
+@layer utilities {
+  /* Typography systems - mobile*/
+  .text-mega-3xl{
+    @apply text-[5rem]
+  }
+  .text-mega-2xl{
+    @apply text-[4.5rem]
+  }
+  .text-mega-xl{
+    @apply text-[3.5rem]
+  }
+  .text-mega{
+    @apply text-[3rem];
+  }
+  .text-h1{
+    @apply text-[2.25rem]
+  }
+  .text-h2{
+    @apply text-[2rem]
+  }
+  .text-h3{
+    @apply text-[1.5rem]
+  }
+  .text-h4{
+    @apply text-[1.3rem]
+  }
+  .text-h5{
+    @apply text-[1.15rem]
+  }
+  .text-body{
+    @apply text-[1rem]
+  }
+  .text-small{
+    @apply text-[0.75rem]
+  }
 }
 
 /* 字型 */

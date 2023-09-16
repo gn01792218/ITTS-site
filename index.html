@@ -11,19 +11,29 @@
 </head>
 
 <body class="font-notosnscjktcblack">
-    <section class="relative w-full h-[737px] text-white text-h2 font-[900]">
+    <section class="relative w-full text-white text-h2 font-[900]">
         <!-- 背景圖 -->
-        <img class="absolute w-full h-full object-cover" src="./assets/images/mobile-banner.webp" alt="mobile-bg">
+        <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.webp" alt="mobile-bg">
+        <img class="hidden w-full h-full xl:block" src="./assets/images/header-desktop.webp" alt="desktopHeader">
         <!-- icon與title -->
-        <div class="absolute pl-7 xs:pl-9 pt-20">
-            <img class="w-[150px] mb-5" src="./assets/images/logo.png" alt="itts-icon">
-            <h2 clas="text-white">升級 <span class="text-h1">SAP ERP</span></h2>
+        <div class="absolute top-0 pl-7 pt-20 xs:pl-9 xl:pl-28 2xl:pl-36 xl:text-mega 2xl:text-mega-xl">
+            <img class="w-[150px] mb-5 2xl:w-[180px]" src="./assets/images/logo.png" alt="itts-icon">
+            <h2 clas="text-white">升級 <span class="text-h1 xl:text-mega-xl 2xl:text-mega-2xl">SAP ERP</span></h2>
             <h2>決策者的智慧選擇</h2>
-            <img class="w-[125px] ml-auto mt-[-5px]" src="./assets/images/line.webp" alt="line">
+            <img class="w-[125px] ml-auto mt-[-5px] xl:w-[185px] 2xl:w-[275px]" src="./assets/images/line.webp"
+                alt="line">
+        </div>
+        <div class="hidden absolute bottom-[10%] text-h3 2xl:text-h2 pl-28 xl:block 2xl:pl-36">
+            <h3 class="tracking-widest font-bold xl:block">打造企業數位化新紀元</h3>
+            <a class="w-[350px] h-[60px] mt-5 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
+                    bg-gradient-to-r from-[#F8C920] to-[#F88A1A] 2xl:w-[470px]" href="#email">
+                <p class="mr-3 font-bold">了解更多SAP ERP升級服務</p>
+                <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
+            </a>
         </div>
     </section>
-    <!-- 了解更多按鈕區塊 -->
-    <section class="w-full h-[210px] flex justify-center mt-[-24px]">
+    <!-- 打造企業數位化新紀元(手機版本) -->
+    <section class="w-full h-[210px] flex justify-center mt-[-24px] xl:hidden">
         <div class="relative w-[335px]">
             <img class="w-full absolute" src="./assets/images/dot-bg.webp" alt="dotbg">
             <div class="w-full absolute  text-center p-4 flex flex-col items-center">
@@ -40,54 +50,61 @@
     </section>
     <!-- 持續創新擴充區塊 -->
     <section class="w-full flex flex-col items-center">
-        <div class="relative w-[335px] h-[155px]">
-            <img class="absolute w-full h-full" src="./assets/images/circle_bg.png" alt="circlebg">
-            <div class="absolute w-full text-center mt-5">
-                <p class="text-body text-text font-semibold">升級雲端ERP的時機已到</p>
-                <h3 class="text-title text-h3 font-[900] leading-7">持續創新擴充</h3>
-                <h3 class="text-title text-h3 font-[900] leading-6">加速實現價值</h3>
+        <div class="relative w-[335px] xl:mt-5 xl:w-[465px]">
+            <img class="w-full h-full" src="./assets/images/circle_bg.png" alt="circlebg">
+            <div class="absolute top-0 w-full text-center mt-5 xl:mt-8">
+                <p class="text-body text-text font-semibold xl:text-h5">升級雲端ERP的時機已到</p>
+                <h3 class="text-title text-h3 font-[900] leading-7 xl:text-h2 xl:leading-8">持續創新擴充</h3>
+                <h3 class="text-title text-h3 font-[900] leading-6 xl:text-h2 xl:leading-8">加速實現價值</h3>
             </div>
         </div>
-        <div class="text-center mt-10 leading-6">
+        <div class="text-center mt-10 leading-6 xl:hidden">
             <h4 class="text-title font-bold text-h4">佈局全球事業版圖，</h4>
             <h4 class="text-title font-bold text-h4">您都準備好了嗎?</h4>
         </div>
-        <ul class="mt-5">
-            <li class="relative w-[272px] h-[91px] flex items-center mb-4">
-                <img class="absolute w-full" src="./assets/images/button.webp" alt="button">
-                <div class="absolute w-full flex justify-center items-center">
-                    <img class="mr-3 w-[25px]" src="./assets/images/chain.png" alt="chain">
-                    <p class="text-body text-text font-medium">供應鏈多變性的困擾</p>
+        <h4 class="hidden text-title font-bold text-h3 mt-8 xl:block 2xl:text-h2">布局全球事業版圖，您都準備好了嗎?</h4>
+        <ul class="mt-8 flex flex-col xl:flex-row">
+            <li class="relative w-[272px] h-[100px] flex items-center mb-4 xl:mr-5 xl:w-[350px] ">
+                <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
+                <div class="absolute top-0 w-full h-full flex justify-center items-center">
+                    <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/chain.png" alt="chain">
+                    <p class="text-body text-text font-medium xl:text-h5">供應鏈多變性的困擾</p>
                 </div>
             </li>
-            <li class="relative w-[272px] h-[91px] flex items-center mb-4">
-                <img class="absolute w-full" src="./assets/images/button.webp" alt="button">
-                <div class="absolute w-full flex justify-center items-center">
-                    <img class="mr-3 w-[25px]" src="./assets/images/Financial.png" alt="finacial">
-                    <p class="text-body text-text font-medium">財務月結的效率問題</p>
+            <li class="relative w-[272px] h-[100px] flex items-center mb-4 xl:mr-5 xl:w-[350px] ">
+                <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
+                <div class="absolute top-0 w-full h-full flex justify-center items-center">
+                    <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/Financial.png" alt="finacial">
+                    <p class="text-body text-text font-medium xl:text-h5">財務月結的效率問題</p>
                 </div>
             </li>
-            <li class="relative w-[272px] h-[91px] flex items-center">
-                <img class="absolute w-full" src="./assets/images/button.webp" alt="button">
-                <div class="absolute w-full flex justify-center items-center">
-                    <img class="mr-3 w-[25px]" src="./assets/images/LackData.png" alt="lockdata">
-                    <p class="text-body text-text font-medium">缺乏數據決策的依據</p>
+            <li class="relative w-[272px] h-[100px] flex items-center xl:w-[350px]">
+                <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
+                <div class="absolute top-0 w-full h-full flex justify-center items-center">
+                    <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/LackData.png" alt="lockdata">
+                    <p class="text-body text-text font-medium xl:text-h5">缺乏數據決策的依據</p>
                 </div>
             </li>
         </ul>
-        <div class="relative w-[320px] h-[153px] mt-10">
-            <img class="w-full absolute" src="./assets/images/block.webp" alt="block">
-            <div
-                class="w-full h-full text-acentred text-center font-bold absolute text-h5 flex flex-col justify-center">
-                <p>這些可能會造成您企業的 <span class="underline">業務中斷</span>、</p>
-                <p><span class="underline">風險成本</span>，甚至 <span class="underline">營運表現</span>。</p>
+        <div class="relative w-[330px] h-[153px] mt-10 xl:w-[1090px]">
+            <img class="w-full h-full" src="./assets/images/block.png" alt="block">
+            <div class="absolute top-0 w-full h-full text-acentred text-center font-bold text-h5 flex flex-col justify-center xl:hidden">
+                <p>這些可能會造成您企業的 <span class="underline font-[900]">業務中斷</span>、</p>
+                <p><span class="underline font-[900]">風險成本</span>，甚至 <span class="underline">營運表現</span>。</p>
             </div>
+            <p class="hidden absolute top-0 w-full h-full text-acentred text-center font-bold text-h4 items-center justify-center xl:flex 2xl:text-h2">
+                這些可能會造成您企業的 
+                <span class="underline font-[900]">業務中斷</span>、
+                <span class="underline font-[900]">風險成本</span>，甚至 
+                <span class="underline font-900">營運表現</span>。
+            </p>
         </div>
     </section>
     <!-- 東傑資訊以SAP ... 為您的企業...紀元區塊 -->
-    <section class="relative w-full h-[527px] xs:h-[582px] mt-10">
-        <img class="absolute w-full h-full" src="./assets/images/dualBG.png" alt="bg">
-        <div class="absolute w-full pl-7 xs:pl-9 pt-16 text-white">
+    <section class="relative w-full mt-10">
+        <img class="w-full h-full sm:hidden" src="./assets/images/dualBG.png" alt="bg">
+        <img class="hidden w-full h-full sm:block" src="./assets/images/syncronized.png" alt="bg">
+        <div class="absolute top-0 w-full pl-7 pt-16 text-white flex flex-col xs:pl-9 sm:flex-row sm:justify-end">
             <div class="w-full text-h2 font-[900]">
                 <h2>東傑資訊以</h2>
                 <h2 class="text-h2 xs:text-h1">SAP S/4HANA Cloud</h2>
@@ -96,7 +113,7 @@
                     <img class="w-full mr-auto mt-2" src="./assets/images/line.webp" alt="line">
                 </div>
             </div>
-            <div class="text-h4 font-bold mt-28 xs:mt-36">
+            <div class="text-h4 font-bold mt-28 xs:mt-36 sm:mt-0">
                 <p>與國際大廠同步的</p>
                 <p>世界級智慧ERP提供360°的</p>
                 <p>財務及營運洞察，現代化創新流程，</p>
@@ -277,19 +294,29 @@
     <section id="email" class="w-full flex justify-center">
         <form class="w-[320px]" action="">
             <div class="flex flex-col xl:flex-row">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="company" id="company" placeholder="完整公司名稱">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="name" id="name" placeholder="姓名">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="tel" name="phone" id="phone" placeholder="聯絡電話">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="email" name="email" id="email" placeholder="Email">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="department" id="department" placeholder="部門">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="job" id="job" placeholder="職稱">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
+                    name="company" id="company" placeholder="完整公司名稱">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
+                    name="name" id="name" placeholder="姓名">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="tel"
+                    name="phone" id="phone" placeholder="聯絡電話">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="email"
+                    name="email" id="email" placeholder="Email">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
+                    name="department" id="department" placeholder="部門">
+                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="job"
+                    id="job" placeholder="職稱">
             </div>
-            <textarea class="w-full px-3 py-4 border-text border-[1px] rounded-md" name="des" id="des" cols="30" rows="10" placeholder="請描述您的需求或感興趣的解決方案"></textarea>
+            <textarea class="w-full px-3 py-4 border-text border-[1px] rounded-md" name="des" id="des" cols="30"
+                rows="10" placeholder="請描述您的需求或感興趣的解決方案"></textarea>
             <div class="my-5 flex items-center">
                 <input class="w-[20px] h-[20px] mr-2" type="checkbox" id="agree" name="agree">
-                <label class="text-text text-h5 font-medium" for="agree">我同意接受東捷資訊<span class="text-acenttag">隱私權聲明</span></label>
+                <label class="text-text text-h5 font-medium" for="agree">我同意接受東捷資訊<span
+                        class="text-acenttag">隱私權聲明</span></label>
             </div>
-            <button class="w-full h-[50px] text-white mb-20 flex items-center justify-center bg-gradient-to-r from-[#2A5C9A] to-[#003064] rounded-xl" type="submit">
+            <button
+                class="w-full h-[50px] text-white mb-20 flex items-center justify-center bg-gradient-to-r from-[#2A5C9A] to-[#003064] rounded-xl"
+                type="submit">
                 <p class="mr-3 font-bold text-h4">送出資料</p>
                 <img src="./assets/images/icon-arrow-right.png" alt="arrow">
             </button>
