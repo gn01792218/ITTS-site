@@ -576,6 +576,10 @@
 </body>
 <script>
     function submitHandler() {
+        if(!document.getElementById("agree").checked){
+            alert('請先勾選同意事項')
+            return
+        }
         const company = document.getElementById("company").value;
         const name = document.getElementById("name").value;
         const phone = document.getElementById("phone").value;
@@ -589,7 +593,7 @@
         const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
 
         // 使用mailto連結打開預設郵箱並填入資料
-        const recipients = "gn01792218@hotmail.com,lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
+        const recipients = "lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
         const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
 
         // 打開郵件客戶端
