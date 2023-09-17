@@ -33,7 +33,7 @@
         <div class="hidden absolute bottom-[10%] text-h3 pl-28 xl:block gloable-padding">
             <h3 class="tracking-widest font-bold xl:block">打造企業數位化新紀元</h3>
             <a class="w-[355px] h-[60px] mt-5 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
-                    bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email">
+                    bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email-section">
                 <p class="mr-3 font-bold">了解更多SAP ERP升級服務</p>
                 <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
             </a>
@@ -48,7 +48,7 @@
                 <h3 class="text-title text-h3 font-bold">打造企業數位化新紀元</h3>
                 <img class="w-[2px] h-[30px] my-1" src="./assets/images/stateLine.png" alt="line">
                 <a class="w-[272px] h-[50px] text-white bg-yellow-600 flex justify-center items-center rounded-xl 
-                bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email">
+                bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email-section">
                     <p class="mr-3 font-bold font-notosnscjktcbold">了解更多SAP ERP升級服務</p>
                     <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
                 </a>
@@ -208,7 +208,7 @@
                         <div class="w-[330px] my-10">
                             <a class="mx-auto  w-[252px] h-[50px] text-h4 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
                             bg-gradient-to-r from-[#F8C920] to-[#F88A1A] xl:text-h3 xl:mx-0 xl:mr-auto xl:w-[270px] xl:h-[60px]"
-                                href="#email">
+                                href="#email-section">
                                 <p class="mr-3 font-bold">詳細產品資料諮詢</p>
                                 <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png"
                                     alt="right-arrow">
@@ -531,8 +531,8 @@
             </div>
         </div>
     </section>
-    <section id="email" class="w-full flex justify-center mt-5">
-        <form class="gloable-padding w-[320px] sm:w-full" action="">
+    <section id="email-section" class="w-full flex justify-center mt-5">
+        <form id="myForm">
             <div class="flex flex-col">
                 <div class="sm:flex sm:justify-between">
                     <input
@@ -566,7 +566,7 @@
             </div>
             <button
                 class="w-full h-[50px] text-white mb-20 flex items-center justify-center bg-gradient-to-r from-[#2A5C9A] to-[#003064] rounded-xl sm:w-[320px] sm:mx-auto"
-                type="submit">
+                type="button" onclick="submitHandler()">
                 <p class="mr-3 font-bold text-h4">送出資料</p>
                 <img src="./assets/images/icon-arrow-right.png" alt="arrow">
             </button>
@@ -574,5 +574,27 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
+<script>
+    function submitHandler() {
+        const company = document.getElementById("company").value;
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const department = document.getElementById("department").value;
+        const job = document.getElementById("job").value;
+        const des = document.getElementById("des").value;
+
+        // 建立郵件主題和內容
+        const subject = encodeURIComponent("表單提交");
+        const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
+
+        // 使用mailto連結打開預設郵箱並填入資料
+        const recipients = "gn01792218@hotmail.com,lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
+        const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
+
+        // 打開郵件客戶端
+        window.location.href = mailtoLink;
+    }
+</script>
 
 </html>
