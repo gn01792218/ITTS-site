@@ -219,7 +219,8 @@
                 <!-- Q2~Q7 -->
                 <div class="gloable-padding h-full">
                     <!-- slider -->
-                    <div id="carouselDarkVariant" class="relative max-w-[1056px] h-[540px] sm:h-[700px] lg:h-[800px] xl:h-[850px] rounded-md overflow-hidden"
+                    <div id="carouselDarkVariant"
+                        class="relative max-w-[1056px] h-[540px] sm:h-[700px] lg:h-[800px] xl:h-[850px] rounded-md overflow-hidden"
                         data-te-carousel-init data-te-ride="carousel">
                         <!-- Carousel control -->
                         <div class="absolute w-full h-full">
@@ -531,29 +532,29 @@
             </div>
         </div>
     </section>
-    <section id="email-section" class="w-full flex justify-center mt-5">
-        <form id="myForm">
+    <section id="email-section" class="w-full flex justify-center mt-5 gloable-padding">
+        <form id="myForm" class="w-full max-w-[1280px]">
             <div class="flex flex-col">
                 <div class="sm:flex sm:justify-between">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="company" id="company" placeholder="完整公司名稱">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="name" id="name" placeholder="姓名">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
                         type="tel" name="phone" id="phone" placeholder="聯絡電話">
                 </div>
                 <div class="sm:flex sm:justify-between">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="email" name="email" id="email" placeholder="Email">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="department" id="department" placeholder="部門">
                     <input
-                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                        class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
                         type="text" name="job" id="job" placeholder="職稱">
                 </div>
             </div>
@@ -576,7 +577,7 @@
 </body>
 <script>
     function submitHandler() {
-        if(!document.getElementById("agree").checked){
+        if (!document.getElementById("agree").checked) {
             alert('請先勾選同意事項')
             return
         }
