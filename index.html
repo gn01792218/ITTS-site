@@ -11,7 +11,7 @@
 </head>
 
 <body class="font-notosnscjktcblack">
-    <section class="relative w-full text-white text-h2 font-[900]">
+    <section class="relative w-full text-white text-h2 font-[900] h-[700px] xl:h-[540px]">
         <!-- 背景圖 -->
         <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.webp" alt="mobile-bg">
         <img class="hidden w-full h-full xl:block" src="./assets/images/header-desktop.webp" alt="desktopHeader">
@@ -92,7 +92,7 @@
                 <p>這些可能會造成您企業的 <span class="underline font-[900]">業務中斷</span>、</p>
                 <p><span class="underline font-[900]">風險成本</span>，甚至 <span class="underline">營運表現</span>。</p>
             </div>
-            <p class="hidden absolute top-0 w-full h-full text-acentred text-center font-bold text-h4 items-center justify-center xl:flex 2xl:text-h2">
+            <p class="hidden absolute top-0 w-full h-full text-acentred text-center font-bold text-h4 items-center justify-center xl:flex xl:text-h3 2xl:text-h2">
                 這些可能會造成您企業的 
                 <span class="underline font-[900]">業務中斷</span>、
                 <span class="underline font-[900]">風險成本</span>，甚至 
@@ -101,19 +101,19 @@
         </div>
     </section>
     <!-- 東傑資訊以SAP ... 為您的企業...紀元區塊 -->
-    <section class="relative w-full mt-10">
+    <section class="relative w-full h-[582px] sm:h-[432px] mt-10 ">
         <img class="w-full h-full sm:hidden" src="./assets/images/dualBG.png" alt="bg">
         <img class="hidden w-full h-full sm:block" src="./assets/images/syncronized.png" alt="bg">
-        <div class="absolute top-0 w-full pl-7 pt-16 text-white flex flex-col xs:pl-9 sm:flex-row sm:justify-end">
-            <div class="w-full text-h2 font-[900]">
+        <div class="absolute top-[12%] w-full pl-7 pt-0 text-white flex flex-col xs:pl-9 sm:flex-row sm:items-end sm:top-[30%]">
+            <div class="w-full text-h2 font-[900] xl:pl-28 2xl:pl-36 2xl:text-h1">
                 <h2>東傑資訊以</h2>
-                <h2 class="text-h2 xs:text-h1">SAP S/4HANA Cloud</h2>
-                <div class="w-[320px]">
+                <h2 class="xs:text-h1 xl:text-mega 2xl:text-mega-xl">SAP S/4HANA Cloud</h2>
+                <div class="w-[320px] 2xl:w-[360px]">
                     <h2>為您的企業開啟新紀元</h2>
                     <img class="w-full mr-auto mt-2" src="./assets/images/line.webp" alt="line">
                 </div>
             </div>
-            <div class="text-h4 font-bold mt-28 xs:mt-36 sm:mt-0">
+            <div class="w-full text-h4 font-bold mt-28 xs:mt-36 sm:mt-0 xl:text-h3 2xl:text-h2-sm">
                 <p>與國際大廠同步的</p>
                 <p>世界級智慧ERP提供360°的</p>
                 <p>財務及營運洞察，現代化創新流程，</p>
@@ -124,8 +124,8 @@
     <!-- SAP ERP 升級全攻略 -->
     <section class="w-full mt-7">
         <!-- 手機板區塊( 平板以上不顯示 ) -->
-        <div class="w-full pl-7 xs:pl-9">
-            <div class="flex items-center mb-5">
+        <div class="w-full pl-7 flex flex-col items-center xs:pl-9 sm:hidden">
+            <div class="w-auto flex items-center mb-5">
                 <img class="w-[150px] mr-5" src="./assets/images/itts-icon-blue.png" alt="itts">
                 <div>
                     <p class="text-acent text-small font-semibold leading-3">UPGRADE NOW</p>
@@ -142,128 +142,133 @@
             </div>
         </div>
         <!-- 桌基板、手機板共用區塊 -->
-        <div class="relative w-full min-h-[521px]">
-            <img class="absolute w-full h-full z-[-1]" src="./assets/images/videoSection_bg.png" alt="videosectionbg">
-            <div class="w-full pl-7 xs:pl-9 hidden">
-                <div class="flex items-center mb-5">
-                    <img class="w-[150px] mr-5" src="./assets/images/itts-icon-blue.png" alt="itts">
-                    <div>
-                        <p class="text-acent text-small font-semibold leading-3">UPGRADE NOW</p>
-                        <h2 class="text-h2 text-title font-[900]">SAP ERP</h2>
-                        <h2 class="text-h2 text-title font-[900]">升級全攻略</h2>
+        <div class="relative w-full">
+            <img class="w-full" src="./assets/images/videoSection_bg.png" alt="videosectionbg">
+            <div class="absolute top-0 w-full">
+                <div class="hidden w-full pl-7 mt-32 flex-col items-center xs:pl-9 sm:flex">
+                    <div class="w-auto flex items-center mb-5">
+                        <img class="w-[150px] mr-5 sm:w-[250px]" src="./assets/images/itts-icon-blue.png" alt="itts">
+                        <div>
+                            <p class="text-acent text-small font-semibold leading-3 sm:text-body 2xl:text-h5">UPGRADE NOW</p>
+                            <h2 class="text-h2 text-title font-[900] sm:text-mega 2xl:text-mega-xl">SAP ERP</h2>
+                            <h2 class="text-h2 text-title font-[900] sm:text-mega 2xl:text-mega-xl">升級全攻略</h2>
+                        </div>
+                    </div>
+                    <div class="text-center mb-7 md:hidden">
+                        <p class="text-subtitle text-h4 font-bold">解鎖更高效簡單的業務流程，</p>
+                        <p class="text-subtitle text-h4 font-bold">東捷資訊為您打開升級致勝先機</p>
+                    </div>
+                    <p class="hidden mb-7 text-subtitle text-h3 font-bold md:block 2xl:text-h2-sm">解鎖更高效簡單的業務流程，東捷資訊為您打開升級致勝先機</p>
+                    <div class="w-full mb-7">
+                        <img class="w-[40px] mx-auto" src="./assets/images/down_arrow.png" alt="downarrow">
                     </div>
                 </div>
-                <div class="text-center mb-7">
-                    <p class="text-subtitle text-h4 font-bold">解鎖更高效簡單的業務流程，</p>
-                    <p class="text-subtitle text-h4 font-bold">東捷資訊為您打開升級致勝先機</p>
-                </div>
-                <div class="w-full mb-7">
-                    <img class="w-[40px] mx-auto" src="./assets/images/down_arrow.png" alt="downarrow">
-                </div>
-            </div>
-            <!-- Q1 區塊-->
-            <div class="relative w-[85%] h-[100px] mb-5 xl:w-[380px]">
-                <img class="absolute w-full h-full top-0 left-0" src="./assets/images/headline_box_yellow.png.webp"
-                    alt="tag">
-                <div class="absolute w-full h-full pl-7 xs:pl-9 flex items-center mt-[-7px]">
-                    <p class="text-acenttag text-h1 font-semibold mr-2">Q1</p>
-                    <div class="border-l-2 border-text h-[50px] mr-2"></div>
-                    <div>
-                        <p class="text-h4 text-text font-bold">為什麼</p>
-                        <p class="text-h4 text-text font-bold">要升級舊版ERP系統?</p>
+                <!-- Q1 區塊-->
+                <div class="relative w-[85%] h-[100px] mb-5 sm:w-[480px]">
+                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_yellow.png.webp" alt="tag">
+                    <div class="absolute top-0 w-full h-full pl-7 flex items-center mt-[-7px] xs:pl-9 xl:pl-28 2xl:pl-36">
+                        <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega 2xl:text-mega-xl">Q1</p>
+                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                        <div>
+                            <p class="text-h4 text-text font-bold xl:text-h3 2xl:text-h2-sm leading-7">為什麼</p>
+                            <p class="text-h4 text-text font-bold xl:text-h3 2xl:text-h2-sm leading-7">要升級舊版ERP系統?</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- 影片和文字說明 -->
-            <div class="pl-7 flex flex-col xs:pl-9 xl:flex-row-reverse">
-                <div class="w-full h-[200px] xl:h-[300px]  rounded-md overflow-hidden mb-10">
-                    <iframe class="w-[330px] h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560" height="315"
-                        src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="w-[330px] xl:w-[850px] xl:mr-10">
-                    <div class="text-h4 text-text font-medium">
-                        <p class="mb-10">IDC預估至2026年，將有愈多企業投入跨平台系統串聯的相關應用。</p>
-                        <p>當舊版ERP系統的侷限性愈發明顯，升級至新版SAP S/4HANA則可
-                            <span class="text-acenttext">立即滿足企業在法規、資安、財務料帳整合等業務需求</span>
-                            ，並運用創新科技發揮
-                            <span class="text-acenttext">即時預測分析及模擬的優勢</span>
-                            ，彈性因應業務擴展需求，協助企業提升競爭優勢。
-                        </p>
+                <!-- 影片和文字說明 -->
+                <div class="pl-7 flex flex-col xs:pl-9 xl:pl-28 2xl:pl-36 md:flex-row-reverse">
+                    <div class="w-full h-[200px] xl:h-[300px] rounded-md overflow-hidden mb-10">
+                        <iframe class="w-[330px] h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560" height="315"
+                            src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <div class="w-[330px] my-10">
-                        <a class="mx-auto xl:mx-0 xl:mr-auto w-[252px] h-[50px] text-h4 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
-                        bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email">
-                            <p class="mr-3 font-bold">詳細產品資料諮詢</p>
-                            <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
-                        </a>
+                    <div class="w-[330px] xl:w-[850px] md:mr-10">
+                        <div class="text-h4 text-text font-medium xl:text-h3">
+                            <p class="mb-10">IDC預估至2026年，將有愈多企業投入跨平台系統串聯的相關應用。</p>
+                            <p>當舊版ERP系統的侷限性愈發明顯，升級至新版SAP S/4HANA則可
+                                <span class="text-acenttext font-[900]">立即滿足企業在法規、資安、財務料帳整合等業務需求</span>
+                                ，並運用創新科技發揮
+                                <span class="text-acenttext font-[900]">即時預測分析及模擬的優勢</span>
+                                ，彈性因應業務擴展需求，協助企業提升競爭優勢。
+                            </p>
+                        </div>
+                        <div class="w-[330px] my-10">
+                            <a class="mx-auto  w-[252px] h-[50px] text-h4 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
+                            bg-gradient-to-r from-[#F8C920] to-[#F88A1A] xl:text-h3 xl:mx-0 xl:mr-auto xl:w-[270px] xl:h-[60px]" href="#email">
+                                <p class="mr-3 font-bold">詳細產品資料諮詢</p>
+                                <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Q2~Q7 -->
-            <div class="">
-
+                <!-- Q2~Q7 -->
+                <div class="xl:pl-28 2xl:pl-36">
+                    這裡是Q2~Q7
+                    <div class="h-screen"></div>
+                </div>
             </div>
         </div>
     </section>
     <!-- SAP ERP升級首選 -->
-    <section class="relative w-full h-[800px] flex flex-col sm:flex-row">
-        <img class="absolute w-full h-full" src="./assets/images/mobileupdatebg.webp" alt="bg">
-        <div class="absolute w-full mt-10">
-            <div class="flex flex-col items-center text-white mb-10">
-                <p class="text-h2">RISE with SAP</p>
-                <img class="w-[130px] my-2" src="./assets/images/line.webp" alt="line">
-                <h1 class="text-h1 mb-5">SAP ERP升級首選</h1>
-                <img class="w-[250px]" src="./assets/images/itts-icon.png" alt="itts">
+    <section class="relative w-full">
+        <img class="w-full sm:hidden" src="./assets/images/mobileupdatebg.webp" alt="bg">
+        <img class="hidden w-full h-[500px] sm:block" src="./assets/images/rize_bg.png" alt="deskbg">
+        <div class="absolute top-0 w-full h-full mt-10 flex flex-col sm:flex-row sm:justify-center sm:items-center sm:mt-5">
+            <div class="flex flex-col items-center text-white mb-10 xl:mb-0 xl:mr-36">
+                <p class="text-h2 xl:text-h1 2xl:text-mega">RISE with SAP</p>
+                <img class="w-[130px] my-2 xl:w-[170px] xl:h-[3px]" src="./assets/images/line.webp" alt="line">
+                <h1 class="text-h1 mb-5 xl:text-mega 2xl:text-mega-xl">SAP ERP升級首選</h1>
+                <img class="w-[250px] xl:w-[300px] 2xl:w-[350px]" src="./assets/images/itts-icon.png" alt="itts">
             </div>
-            <ul class="w-full flex flex-col items-center text-acentbutton">
+            <ul class="w-full flex flex-col items-center justify-center text-acentbutton sm:w-auto">
                 <li class="relative flex items-center justify-center mb-8">
-                    <img class="w-[320px]" src="./assets/images/mobileBTNBG.png" alt="button">
-                    <h1 class="absolute text-h1 font-[900]">企業口碑推薦</h1>
+                    <img class="w-[320px] sm:w-[270px]" src="./assets/images/mobileBTNBG.png" alt="button">
+                    <h1 class="absolute text-h1 font-[900] sm:text-h2-sm">企業口碑推薦</h1>
                 </li>
                 <li class="relative flex items-center justify-center mb-8">
-                    <img class="w-[320px]" src="./assets/images/mobileBTNBG.png" alt="button">
-                    <h1 class="absolute text-h1 font-[900]">專業顧問</h1>
+                    <img class="w-[320px] sm:w-[270px]" src="./assets/images/mobileBTNBG.png" alt="button">
+                    <h1 class="absolute text-h1 font-[900] sm:text-h2-sm">專業顧問</h1>
                 </li>
                 <li class="relative flex items-center justify-center mb-8">
-                    <img class="w-[320px]" src="./assets/images/mobileBTNBG.png" alt="button">
-                    <h1 class="absolute text-h1 font-[900]">無痛整合</h1>
+                    <img class="w-[320px] sm:w-[270px]" src="./assets/images/mobileBTNBG.png" alt="button">
+                    <h1 class="absolute text-h1 font-[900] sm:text-h2-sm">無痛整合</h1>
                 </li>
                 <li class="relative flex items-center justify-center mb-8">
-                    <img class="w-[320px]" src="./assets/images/mobileBTNBG.png" alt="button">
-                    <h1 class="absolute text-h1 font-[900]">準時上線</h1>
+                    <img class="w-[320px] sm:w-[270px]" src="./assets/images/mobileBTNBG.png" alt="button">
+                    <h1 class="absolute text-h1 font-[900] sm:text-h2-sm">準時上線</h1>
                 </li>
             </ul>
         </div>
     </section>
     <!-- 全球動向精準預判 -->
-    <section class="relative w-full">
+    <section class="relative w-full h-[1200px] sm:h-[578px]">
         <img class="w-full h-full sm:hidden" src="./assets/images/mobilebg.webp" alt="bg">
+        <img class="hidden w-full h-full sm:block" src="./assets/images/videos-background.png" alt="videobg">
         <div class="w-full absolute top-0 flex flex-col items-center justify-center text-center mt-5">
             <div class="sm:hidden mb-10">
                 <p class="text-subtitle text-h4 font-bold">全球動向精準預判，</p>
                 <p class="text-subtitle text-h4 font-bold">升級擁抱智慧新藍圖</p>
             </div>
-            <p class="hidden text-subtitle text-h4 font-bold mb-10 sm:block">全球動向精準預判，升級擁抱智慧新藍圖</p>
-            <ul class="w-[320px]">
-                <li class="w-full mb-10">
-                    <img class="w-full mb-2 rounded-2xl" src="https://picsum.photos/id/684/600/400" alt="民生">
-                    <p class="text-subtitle text-h1 font-bold">民生製造業</p>
+            <p class="hidden text-subtitle text-h2 font-bold my-10 sm:block">全球動向精準預判，升級擁抱智慧新藍圖</p>
+            <ul class="w-[320px] flex flex-col items-center sm:flex-row sm:w-auto">
+                <li class="w-[250px] mb-10 sm:w-[250px] sm:mr-20">
+                    <img class="w-full h-[167px] mb-2 rounded-2xl" src="./assets/images/life.png" alt="民生">
+                    <p class="text-subtitle text-h2 font-bold">民生製造業</p>
                     <p class="text-h5 text-text font-medium">解決異質系統串接問題，</p>
                     <p class="text-h5 text-text font-medium">建立即時化資訊平台，</p>
                     <p class="text-h5 text-text font-medium">提升分析決策效率。</p>
                 </li>
-                <li class="w-full mb-10">
-                    <img class="w-full mb-2 rounded-2xl" src="https://picsum.photos/id/64/600/400" alt="光電">
-                    <p class="text-subtitle text-h1 font-bold">光電產業</p>
+                <li class="w-[250px] mb-10 sm:w-[250px] sm:mr-20">
+                    <img class="w-full h-[167px] mb-2 rounded-2xl" src="./assets/images/light.png" alt="光電">
+                    <p class="text-subtitle text-h2 font-bold">光電產業</p>
                     <p class="text-h5 text-text font-medium">設備狀態、生產進度</p>
                     <p class="text-h5 text-text font-medium">即時預警，強化供應鏈韌性，</p>
                     <p class="text-h5 text-text font-medium">快速布局全球市場。</p>
                 </li>
-                <li class="w-full mb-10">
-                    <img class="w-full mb-2 rounded-2xl" src="https://picsum.photos/id/684/600/400" alt="汽車零組件">
-                    <p class="text-subtitle text-h1 font-bold">汽車零組件產業</p>
+                <li class="w-[250px] mb-10 sm:w-[250px] sm:mr-20">
+                    <img class="w-full h-[167px] mb-2 rounded-2xl" src="./assets/images/vihechal.png" alt="汽車零組件">
+                    <p class="text-subtitle text-h2 font-bold">汽車零組件產業</p>
                     <p class="text-h5 text-text font-medium">解決訂單少量多樣化、</p>
                     <p class="text-h5 text-text font-medium">批次生產與序號管理等需求，</p>
                     <p class="text-h5 text-text font-medium">接軌全球兆元商機。</p>
@@ -272,21 +277,22 @@
         </div>
     </section>
     <!-- 別讓您的企業落後、產品資料索取 -->
-    <section class="w-full flex flex-col xl:flex-row">
-        <div class="w-full relative flex justify-center mb-7">
-            <img src="./assets/images/warnLeft.png" alt="action">
-            <div class="absolute top-20 text-white text-center">
-                <p class="text-h2 font-bold">別讓您的企業落後，</p>
-                <p class="text-h1 font-bold">立即行動!</p>
+    <section class="w-full flex flex-col sm:flex-row sm:h-[300px] sm:mb-20">
+        <div class="w-full h-[239px] relative flex justify-center mb-7 sm:w-1/2 sm:mb-0 sm:h-auto">
+            <img class="w-full h-full sm:hidden" src="./assets/images/warnLeft.png" alt="action">
+            <img class="w-full h-full hidden sm:block" src="./assets/images/warn.png" alt="desktopaction">
+            <div class="absolute w-full h-full top-20 text-white text-center sm:text-left sm:top-0 sm:flex sm:flex-col sm:justify-center xl:pl-28 2xl:pl-36">
+                <p class="text-h2 font-bold sm:text-h1">別讓您的企業落後，</p>
+                <p class="text-h1 font-bold sm:text-hmega">立即行動!</p>
             </div>
         </div>
-        <div>
-            <p class="text-h3 text-title text-center font-bold">產品資料索取與免費諮詢</p>
-            <img class="my-5 w-[250px] mx-auto" src="./assets/images/emailline.webp" alt="line">
-            <div class="text-center text-text text-h5 xl:text-left">
+        <div class="sm:w-1/2 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center">
+            <p class="text-h3 text-title text-center font-bold sm:text-h2">產品資料索取與免費諮詢</p>
+            <img class="my-5 w-[250px] mx-auto sm:w-[350px] sm:mt-0" src="./assets/images/emailline.webp" alt="line">
+            <div class="text-center text-text text-h5 sm:text-left sm:text-h4">
                 <p>請填寫下方資料，便於盡快與您聯繫，</p>
                 <p>若您需要立即的支援與服務，</p>
-                <p>請直撥諮詢熱線 <span>02-5551-9890</span>，</p>
+                <p>請直撥諮詢熱線 <span class="text-acentred font-[900]">02-5551-9890</span>，</p>
                 <p>謝謝!</p>
             </div>
         </div>
