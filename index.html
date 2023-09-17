@@ -14,27 +14,29 @@
     <section class="relative w-full text-white text-h2 font-[900] h-[700px] xl:h-[540px]">
         <!-- 背景圖 -->
         <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.webp" alt="mobile-bg">
-        <img class="hidden w-full h-full xl:block" src="./assets/images/header-desktop.webp" alt="desktopHeader">
+        <img class="hidden w-full object-cover h-full xl:block" src="./assets/images/header-desktop.webp" alt="desktopHeader">
         <!-- icon與title -->
-        <div class="absolute top-0 pl-7 pt-20 xs:pl-9 xl:pl-28 2xl:pl-36 xl:text-mega 2xl:text-mega-xl">
+        <div class="w-full absolute top-0 pt-20 gloable-padding xl:text-mega">
             <img class="w-[150px] mb-5 2xl:w-[180px]" src="./assets/images/logo.png" alt="itts-icon">
-            <h2 clas="text-white">升級 <span class="text-h1 xl:text-mega-xl 2xl:text-mega-2xl">SAP ERP</span></h2>
-            <h2>決策者的智慧選擇</h2>
-            <img class="w-[125px] ml-auto mt-[-5px] xl:w-[185px] 2xl:w-[275px]" src="./assets/images/line.webp"
-                alt="line">
+            <h2 clas="text-white">升級 <span class="text-h1 xl:text-mega-xl">SAP ERP</span></h2>
+            <div class="inline-block">
+                <h2>決策者的智慧選擇</h2>
+                <img class="w-[125px] ml-auto mt-[-5px] xl:w-[185px] 2xl:w-[190px]" src="./assets/images/line.webp"
+                    alt="line">
+            </div>
         </div>
-        <div class="hidden absolute bottom-[10%] text-h3 2xl:text-h2 pl-28 xl:block 2xl:pl-36">
+        <div class="hidden absolute bottom-[10%] text-h3 pl-28 xl:block gloable-padding">
             <h3 class="tracking-widest font-bold xl:block">打造企業數位化新紀元</h3>
-            <a class="w-[350px] h-[60px] mt-5 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
-                    bg-gradient-to-r from-[#F8C920] to-[#F88A1A] 2xl:w-[470px]" href="#email">
+            <a class="w-[355px] h-[60px] mt-5 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
+                    bg-gradient-to-r from-[#F8C920] to-[#F88A1A]" href="#email">
                 <p class="mr-3 font-bold">了解更多SAP ERP升級服務</p>
                 <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
             </a>
         </div>
     </section>
     <!-- 打造企業數位化新紀元(手機版本) -->
-    <section class="w-full h-[210px] flex justify-center mt-[-24px] xl:hidden">
-        <div class="relative w-[335px]">
+    <section class="w-full h-[210px] flex justify-center mt-[-24px] gloable-padding xl:hidden">
+        <div class="relative w-full">
             <img class="w-full absolute" src="./assets/images/dot-bg.webp" alt="dotbg">
             <div class="w-full absolute  text-center p-4 flex flex-col items-center">
                 <p class="text-acent text-small font-semibold leading-3">DIGITIZATION</p>
@@ -49,7 +51,7 @@
         </div>
     </section>
     <!-- 持續創新擴充區塊 -->
-    <section class="w-full flex flex-col items-center">
+    <section class="w-full flex flex-col items-center gloable-padding">
         <div class="relative w-[335px] xl:mt-5 xl:w-[465px]">
             <img class="w-full h-full" src="./assets/images/circle_bg.png" alt="circlebg">
             <div class="absolute top-0 w-full text-center mt-5 xl:mt-8">
@@ -62,23 +64,23 @@
             <h4 class="text-title font-bold text-h4">佈局全球事業版圖，</h4>
             <h4 class="text-title font-bold text-h4">您都準備好了嗎?</h4>
         </div>
-        <h4 class="hidden text-title font-bold text-h3 mt-8 xl:block 2xl:text-h2">布局全球事業版圖，您都準備好了嗎?</h4>
-        <ul class="mt-8 flex flex-col xl:flex-row">
-            <li class="relative w-[272px] h-[100px] flex items-center mb-4 xl:mr-5 xl:w-[350px] ">
+        <h4 class="hidden text-title font-bold text-h3 mt-8 xl:block">布局全球事業版圖，您都準備好了嗎?</h4>
+        <ul class="w-full mt-8 flex flex-col xl:flex-row xl:justify-center">
+            <li class="relative w-full max-w-[350px] h-[100px] flex items-center mb-4 xl:mr-5">
                 <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
                 <div class="absolute top-0 w-full h-full flex justify-center items-center">
                     <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/chain.png" alt="chain">
                     <p class="text-body text-text font-medium xl:text-h5">供應鏈多變性的困擾</p>
                 </div>
             </li>
-            <li class="relative w-[272px] h-[100px] flex items-center mb-4 xl:mr-5 xl:w-[350px] ">
+            <li class="relative w-full max-w-[350px] h-[100px] flex items-center mb-4 xl:mr-5">
                 <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
                 <div class="absolute top-0 w-full h-full flex justify-center items-center">
                     <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/Financial.png" alt="finacial">
                     <p class="text-body text-text font-medium xl:text-h5">財務月結的效率問題</p>
                 </div>
             </li>
-            <li class="relative w-[272px] h-[100px] flex items-center xl:w-[350px]">
+            <li class="relative w-full max-w-[350px] h-[100px] flex items-center">
                 <img class="w-full h-full" src="./assets/images/button.webp" alt="button">
                 <div class="absolute top-0 w-full h-full flex justify-center items-center">
                     <img class="mr-3 w-[25px] xl:w-[40px]" src="./assets/images/LackData.png" alt="lockdata">
@@ -86,16 +88,18 @@
                 </div>
             </li>
         </ul>
-        <div class="relative w-[330px] h-[153px] mt-10 xl:w-[1090px]">
+        <div class="relative w-full h-[153px] mt-10 max-w-[1280px]">
             <img class="w-full h-full" src="./assets/images/block.png" alt="block">
-            <div class="absolute top-0 w-full h-full text-acentred text-center font-bold text-h5 flex flex-col justify-center xl:hidden">
+            <div
+                class="absolute top-0 w-full h-full text-acentred text-center font-bold text-h5 flex flex-col justify-center xl:hidden">
                 <p>這些可能會造成您企業的 <span class="underline font-[900]">業務中斷</span>、</p>
                 <p><span class="underline font-[900]">風險成本</span>，甚至 <span class="underline">營運表現</span>。</p>
             </div>
-            <p class="hidden absolute top-0 w-full h-full text-acentred text-center font-bold text-h4 items-center justify-center xl:flex xl:text-h3 2xl:text-h2">
-                這些可能會造成您企業的 
+            <p
+                class="hidden absolute top-0 w-full h-full text-acentred text-center font-bold text-h4 items-center justify-center xl:flex xl:text-h3">
+                這些可能會造成您企業的
                 <span class="underline font-[900]">業務中斷</span>、
-                <span class="underline font-[900]">風險成本</span>，甚至 
+                <span class="underline font-[900]">風險成本</span>，甚至
                 <span class="underline font-900">營運表現</span>。
             </p>
         </div>
@@ -104,16 +108,17 @@
     <section class="relative w-full h-[582px] sm:h-[432px] mt-10 ">
         <img class="w-full h-full sm:hidden" src="./assets/images/dualBG.png" alt="bg">
         <img class="hidden w-full h-full sm:block" src="./assets/images/syncronized.png" alt="bg">
-        <div class="absolute top-[12%] w-full pl-7 pt-0 text-white flex flex-col xs:pl-9 sm:flex-row sm:items-end sm:top-[30%]">
-            <div class="w-full text-h2 font-[900] xl:pl-28 2xl:pl-36 2xl:text-h1">
+        <div
+            class="absolute top-[12%] w-full pt-0 text-white flex flex-col gloable-padding sm:flex-row sm:items-end sm:top-[30%]">
+            <div class="w-full text-h2 font-[900]">
                 <h2>東傑資訊以</h2>
-                <h2 class="xs:text-h1 xl:text-mega 2xl:text-mega-xl">SAP S/4HANA Cloud</h2>
-                <div class="w-[320px] 2xl:w-[360px]">
+                <h2 class="xs:text-h1 xl:text-mega">SAP S/4HANA Cloud</h2>
+                <div class="w-[320px]">
                     <h2>為您的企業開啟新紀元</h2>
                     <img class="w-full mr-auto mt-2" src="./assets/images/line.webp" alt="line">
                 </div>
             </div>
-            <div class="w-full text-h4 font-bold mt-28 xs:mt-36 sm:mt-0 xl:text-h3 2xl:text-h2-sm">
+            <div class="w-full text-h4 font-bold mt-28 xs:mt-36 sm:mt-0 xl:text-h3 sm:ml-32">
                 <p>與國際大廠同步的</p>
                 <p>世界級智慧ERP提供360°的</p>
                 <p>財務及營運洞察，現代化創新流程，</p>
@@ -124,13 +129,13 @@
     <!-- SAP ERP 升級全攻略 -->
     <section class="w-full mt-7">
         <!-- 手機板區塊( 平板以上不顯示 ) -->
-        <div class="w-full pl-7 flex flex-col items-center xs:pl-9 sm:hidden">
+        <div class="w-full flex flex-col items-center gloable-padding sm:hidden">
             <div class="w-auto flex items-center mb-5">
                 <img class="w-[150px] mr-5" src="./assets/images/itts-icon-blue.png" alt="itts">
                 <div>
                     <p class="text-acent text-small font-semibold leading-3">UPGRADE NOW</p>
                     <h2 class="text-h2 text-title font-[900]">SAP ERP</h2>
-                    <h2 class="text-h2 text-title font-[900]">升級全攻略</h2>
+                    <h2 class="text-h2-sm text-title font-[900]">升級全攻略</h2>
                 </div>
             </div>
             <div class="text-center mb-7">
@@ -144,8 +149,8 @@
         <!-- 桌基板、手機板共用區塊 -->
         <div class="relative w-full">
             <img class="w-full" src="./assets/images/videoSection_bg.png" alt="videosectionbg">
-            <div class="absolute top-0 w-full">
-                <div class="hidden w-full pl-7 mt-32 flex-col items-center xs:pl-9 sm:flex">
+            <div class="absolute top-0 w-full ">
+                <div class="hidden w-full mt-32 flex-col items-center gloable-padding sm:flex">
                     <div class="w-auto flex items-center mb-5">
                         <img class="w-[150px] mr-5 sm:w-[250px]" src="./assets/images/itts-icon-blue.png" alt="itts">
                         <div>
@@ -158,32 +163,36 @@
                         <p class="text-subtitle text-h4 font-bold">解鎖更高效簡單的業務流程，</p>
                         <p class="text-subtitle text-h4 font-bold">東捷資訊為您打開升級致勝先機</p>
                     </div>
-                    <p class="hidden mb-7 text-subtitle text-h3 font-bold md:block 2xl:text-h2-sm">解鎖更高效簡單的業務流程，東捷資訊為您打開升級致勝先機</p>
+                    <p class="hidden mb-7 text-subtitle text-h3 font-bold md:block 2xl:text-h2-sm">
+                        解鎖更高效簡單的業務流程，東捷資訊為您打開升級致勝先機</p>
                     <div class="w-full mb-7">
                         <img class="w-[40px] mx-auto" src="./assets/images/down_arrow.png" alt="downarrow">
                     </div>
                 </div>
                 <!-- Q1 區塊-->
-                <div class="relative w-[85%] h-[100px] mb-5 sm:w-[480px]">
-                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_yellow.png.webp" alt="tag">
-                    <div class="absolute top-0 w-full h-full pl-7 flex items-center mt-[-7px] xs:pl-9 xl:pl-28 2xl:pl-36">
-                        <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega 2xl:text-mega-xl">Q1</p>
+                <div class="relative w-[85%] h-[100px] mb-5 sm:w-[480px] 2xl:w-[510px]">
+                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_yellow.png.webp"
+                        alt="tag">
+                    <div
+                        class="absolute top-0 w-full h-full pl-7 flex items-center mt-[-7px] xs:pl-9 xl:pl-28 2xl:pl-36">
+                        <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega">Q1</p>
                         <div class="border-l-2 border-text h-[50px] mr-2"></div>
                         <div>
-                            <p class="text-h4 text-text font-bold xl:text-h3 2xl:text-h2-sm leading-7">為什麼</p>
-                            <p class="text-h4 text-text font-bold xl:text-h3 2xl:text-h2-sm leading-7">要升級舊版ERP系統?</p>
+                            <p class="text-h4 text-text font-bold xl:text-h3 leading-7">為什麼</p>
+                            <p class="text-h4 text-text font-bold xl:text-h3 leading-7">要升級舊版ERP系統?</p>
                         </div>
                     </div>
                 </div>
                 <!-- 影片和文字說明 -->
-                <div class="pl-7 flex flex-col xs:pl-9 xl:pl-28 2xl:pl-36 md:flex-row-reverse">
+                <div class="flex flex-col gloable-padding md:flex-row-reverse">
                     <div class="w-full h-[200px] xl:h-[300px] rounded-md overflow-hidden mb-10">
-                        <iframe class="w-[330px] h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560" height="315"
-                            src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player" frameborder="0"
+                        <iframe class="w-full h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560"
+                            height="315" src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="w-[330px] xl:w-[850px] md:mr-10">
+                    <div class="w-full xl:w-[850px] md:mr-10">
                         <div class="text-h4 text-text font-medium xl:text-h3">
                             <p class="mb-10">IDC預估至2026年，將有愈多企業投入跨平台系統串聯的相關應用。</p>
                             <p>當舊版ERP系統的侷限性愈發明顯，升級至新版SAP S/4HANA則可
@@ -195,9 +204,11 @@
                         </div>
                         <div class="w-[330px] my-10">
                             <a class="mx-auto  w-[252px] h-[50px] text-h4 text-white bg-yellow-600 flex justify-center items-center rounded-xl 
-                            bg-gradient-to-r from-[#F8C920] to-[#F88A1A] xl:text-h3 xl:mx-0 xl:mr-auto xl:w-[270px] xl:h-[60px]" href="#email">
+                            bg-gradient-to-r from-[#F8C920] to-[#F88A1A] xl:text-h3 xl:mx-0 xl:mr-auto xl:w-[270px] xl:h-[60px]"
+                                href="#email">
                                 <p class="mr-3 font-bold">詳細產品資料諮詢</p>
-                                <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png" alt="right-arrow">
+                                <img class="w-[20px] h-[10px]" src="./assets/images/icon-arrow-right.png"
+                                    alt="right-arrow">
                             </a>
                         </div>
                     </div>
@@ -214,7 +225,8 @@
     <section class="relative w-full">
         <img class="w-full sm:hidden" src="./assets/images/mobileupdatebg.webp" alt="bg">
         <img class="hidden w-full h-[500px] sm:block" src="./assets/images/rize_bg.png" alt="deskbg">
-        <div class="absolute top-0 w-full h-full mt-10 flex flex-col sm:flex-row sm:justify-center sm:items-center sm:mt-5">
+        <div
+            class="absolute top-0 w-full h-full mt-10 flex flex-col sm:flex-row sm:justify-center sm:items-center sm:mt-5">
             <div class="flex flex-col items-center text-white mb-10 xl:mb-0 xl:mr-36">
                 <p class="text-h2 xl:text-h1 2xl:text-mega">RISE with SAP</p>
                 <img class="w-[130px] my-2 xl:w-[170px] xl:h-[3px]" src="./assets/images/line.webp" alt="line">
@@ -245,13 +257,13 @@
     <section class="relative w-full h-[1200px] sm:h-[578px]">
         <img class="w-full h-full sm:hidden" src="./assets/images/mobilebg.webp" alt="bg">
         <img class="hidden w-full h-full sm:block" src="./assets/images/videos-background.png" alt="videobg">
-        <div class="w-full absolute top-0 flex flex-col items-center justify-center text-center mt-5">
+        <div class="gloable-padding w-full absolute top-0 flex flex-col items-center justify-center text-center mt-5">
             <div class="sm:hidden mb-10">
                 <p class="text-subtitle text-h4 font-bold">全球動向精準預判，</p>
                 <p class="text-subtitle text-h4 font-bold">升級擁抱智慧新藍圖</p>
             </div>
             <p class="hidden text-subtitle text-h2 font-bold my-10 sm:block">全球動向精準預判，升級擁抱智慧新藍圖</p>
-            <ul class="w-[320px] flex flex-col items-center sm:flex-row sm:w-auto">
+            <ul class="w-full flex flex-col items-center sm:flex-row sm:justify-between">
                 <li class="w-[250px] mb-10 sm:w-[250px] sm:mr-20">
                     <img class="w-full h-[167px] mb-2 rounded-2xl" src="./assets/images/life.png" alt="民生">
                     <p class="text-subtitle text-h2 font-bold">民生製造業</p>
@@ -266,7 +278,7 @@
                     <p class="text-h5 text-text font-medium">即時預警，強化供應鏈韌性，</p>
                     <p class="text-h5 text-text font-medium">快速布局全球市場。</p>
                 </li>
-                <li class="w-[250px] mb-10 sm:w-[250px] sm:mr-20">
+                <li class="w-[250px] mb-10 sm:w-[250px]">
                     <img class="w-full h-[167px] mb-2 rounded-2xl" src="./assets/images/vihechal.png" alt="汽車零組件">
                     <p class="text-subtitle text-h2 font-bold">汽車零組件產業</p>
                     <p class="text-h5 text-text font-medium">解決訂單少量多樣化、</p>
@@ -281,7 +293,7 @@
         <div class="w-full h-[239px] relative flex justify-center mb-7 sm:w-1/2 sm:mb-0 sm:h-auto">
             <img class="w-full h-full sm:hidden" src="./assets/images/warnLeft.png" alt="action">
             <img class="w-full h-full hidden sm:block" src="./assets/images/warn.png" alt="desktopaction">
-            <div class="absolute w-full h-full top-20 text-white text-center sm:text-left sm:top-0 sm:flex sm:flex-col sm:justify-center xl:pl-28 2xl:pl-36">
+            <div class="gloable-padding absolute w-full h-full top-20 text-white text-center sm:text-left sm:top-0 sm:flex sm:flex-col sm:justify-center">
                 <p class="text-h2 font-bold sm:text-h1">別讓您的企業落後，</p>
                 <p class="text-h1 font-bold sm:text-hmega">立即行動!</p>
             </div>
@@ -297,31 +309,35 @@
             </div>
         </div>
     </section>
-    <section id="email" class="w-full flex justify-center">
-        <form class="w-[320px]" action="">
-            <div class="flex flex-col xl:flex-row">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
-                    name="company" id="company" placeholder="完整公司名稱">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
-                    name="name" id="name" placeholder="姓名">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="tel"
-                    name="phone" id="phone" placeholder="聯絡電話">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="email"
-                    name="email" id="email" placeholder="Email">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text"
-                    name="department" id="department" placeholder="部門">
-                <input class="w-full h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md" type="text" name="job"
-                    id="job" placeholder="職稱">
+    <section id="email" class="w-full flex justify-center mt-5">
+        <form class="gloable-padding w-[320px] sm:w-full" action="">
+            <div class="flex flex-col">
+                <div class="sm:flex">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        type="text" name="company" id="company" placeholder="完整公司名稱">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        type="text" name="name" id="name" placeholder="姓名">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                        type="tel" name="phone" id="phone" placeholder="聯絡電話">
+                </div>
+                <div class="sm:flex">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        type="email" name="email" id="email" placeholder="Email">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                        type="text" name="department" id="department" placeholder="部門">
+                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                        type="text" name="job" id="job" placeholder="職稱">
+                </div>
             </div>
-            <textarea class="w-full px-3 py-4 border-text border-[1px] rounded-md" name="des" id="des" cols="30"
+            <textarea class="w-full px-3 py-4 border-text border-[1px] rounded-md" name="dfes" id="des" cols="30"
                 rows="10" placeholder="請描述您的需求或感興趣的解決方案"></textarea>
             <div class="my-5 flex items-center">
                 <input class="w-[20px] h-[20px] mr-2" type="checkbox" id="agree" name="agree">
-                <label class="text-text text-h5 font-medium" for="agree">我同意接受東捷資訊<span
+                <label class="text-text text-body-sm font-medium" for="agree">我同意接受東捷資訊<span
                         class="text-acenttag">隱私權聲明</span></label>
             </div>
             <button
-                class="w-full h-[50px] text-white mb-20 flex items-center justify-center bg-gradient-to-r from-[#2A5C9A] to-[#003064] rounded-xl"
+                class="w-full h-[50px] text-white mb-20 flex items-center justify-center bg-gradient-to-r from-[#2A5C9A] to-[#003064] rounded-xl sm:w-[320px] sm:mx-auto"
                 type="submit">
                 <p class="mr-3 font-bold text-h4">送出資料</p>
                 <img src="./assets/images/icon-arrow-right.png" alt="arrow">

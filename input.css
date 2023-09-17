@@ -5,6 +5,10 @@
 /* 請用 @layer utilities 內寫自己的class，並搭配 @apply，盡量使用tailwindcss的class避免多寫css */
 
 @layer utilities {
+  /* padding */
+  .gloable-padding{
+    @apply px-7 xs:px-9 sm:px-28 2xl:px-36
+  }
   /* Typography systems - mobile*/
   .text-mega-3xl{
     @apply text-[5rem]
@@ -38,6 +42,9 @@
   }
   .text-body{
     @apply text-[1rem]
+  }
+  .text-body-sm{
+    @apply text-[0.85rem]
   }
   .text-small{
     @apply text-[0.75rem]
