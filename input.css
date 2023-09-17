@@ -7,7 +7,7 @@
 @layer utilities {
   /* padding */
   .gloable-padding{
-    @apply px-7 xs:px-9 sm:px-28 2xl:px-36
+    @apply px-7 xs:px-9 md:px-28 2xl:px-36
   }
   /* Typography systems - mobile*/
   .text-mega-3xl{

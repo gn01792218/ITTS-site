@@ -8,13 +8,18 @@
         content="東捷資訊深知產業ERP升級需求及痛點，以超過20年SAP ERP在地化顧問服務經驗，提供與SAP原廠同等級的ERP諮詢、導入與售後服務，從需求訪談、客製化應用開發到資料備援備份，東捷資訊提供一站式SAP全顧問服務，絕對是您升級ERP的最佳夥伴！">
     <title>SAP ERP升級全攻略</title>
     <link href="/assets/tailwindcss/output.css" rel="stylesheet">
+    <!-- tailwind Elements 插件 -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 </head>
 
 <body class="font-notosnscjktcblack">
     <section class="relative w-full text-white text-h2 font-[900] h-[700px] xl:h-[540px]">
         <!-- 背景圖 -->
         <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.webp" alt="mobile-bg">
-        <img class="hidden w-full object-cover h-full xl:block" src="./assets/images/header-desktop.webp" alt="desktopHeader">
+        <img class="hidden w-full object-cover h-full xl:block" src="./assets/images/header-desktop.webp"
+            alt="desktopHeader">
         <!-- icon與title -->
         <div class="w-full absolute top-0 pt-20 gloable-padding xl:text-mega">
             <img class="w-[150px] mb-5 2xl:w-[180px]" src="./assets/images/logo.png" alt="itts-icon">
@@ -127,7 +132,7 @@
         </div>
     </section>
     <!-- SAP ERP 升級全攻略 -->
-    <section class="w-full mt-7">
+    <section class="w-full mt-7 sm:mt-0">
         <!-- 手機板區塊( 平板以上不顯示 ) -->
         <div class="w-full flex flex-col items-center gloable-padding sm:hidden">
             <div class="w-auto flex items-center mb-5">
@@ -147,14 +152,15 @@
             </div>
         </div>
         <!-- 桌基板、手機板共用區塊 -->
-        <div class="relative w-full">
-            <img class="w-full" src="./assets/images/videoSection_bg.png" alt="videosectionbg">
-            <div class="absolute top-0 w-full ">
+        <div class="relative w-full h-[1380px] sm:h-[1900px] md:h-[1800px] xl:h-[1900px]">
+            <img class="w-full h-full" src="./assets/images/videoSection_bg.png" alt="videosectionbg">
+            <div class="absolute top-0 w-full h-full">
                 <div class="hidden w-full mt-32 flex-col items-center gloable-padding sm:flex">
                     <div class="w-auto flex items-center mb-5">
                         <img class="w-[150px] mr-5 sm:w-[250px]" src="./assets/images/itts-icon-blue.png" alt="itts">
                         <div>
-                            <p class="text-acent text-small font-semibold leading-3 sm:text-body 2xl:text-h5">UPGRADE NOW</p>
+                            <p class="text-acent text-small font-semibold leading-3 sm:text-body 2xl:text-h5">UPGRADE
+                                NOW</p>
                             <h2 class="text-h2 text-title font-[900] sm:text-mega 2xl:text-mega-xl">SAP ERP</h2>
                             <h2 class="text-h2 text-title font-[900] sm:text-mega 2xl:text-mega-xl">升級全攻略</h2>
                         </div>
@@ -171,10 +177,8 @@
                 </div>
                 <!-- Q1 區塊-->
                 <div class="relative w-[85%] h-[100px] mb-5 sm:w-[480px] 2xl:w-[510px]">
-                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_yellow.png.webp"
-                        alt="tag">
-                    <div
-                        class="absolute top-0 w-full h-full pl-7 flex items-center mt-[-7px] xs:pl-9 xl:pl-28 2xl:pl-36">
+                    <img class="w-full h-full" src="./assets/images/headline_box_yellow.png" alt="tag">
+                    <div class="absolute top-0 w-full h-full pl-7 flex items-center xs:pl-9 xl:pl-28 2xl:pl-36">
                         <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega">Q1</p>
                         <div class="border-l-2 border-text h-[50px] mr-2"></div>
                         <div>
@@ -183,12 +187,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- 影片和文字說明 -->
+                <!-- Q1區塊的影片和文字說明 -->
                 <div class="flex flex-col gloable-padding md:flex-row-reverse">
                     <div class="w-full h-[200px] xl:h-[300px] rounded-md overflow-hidden mb-10">
-                        <iframe class="w-full h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560"
-                            height="315" src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player"
-                            frameborder="0"
+                        <iframe class="w-full h-[200px] rounded-md xl:w-[500px] xl:h-[300px]" width="560" height="315"
+                            src="https://www.youtube.com/embed/WjJZufaOv3o" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -214,9 +217,227 @@
                     </div>
                 </div>
                 <!-- Q2~Q7 -->
-                <div class="xl:pl-28 2xl:pl-36">
-                    這裡是Q2~Q7
-                    <div class="h-screen"></div>
+                <div class="gloable-padding h-full">
+                    <!-- slider -->
+                    <div id="carouselDarkVariant" class="relative max-w-[1056px] h-[540px] sm:h-[700px] lg:h-[800px] xl:h-[850px] rounded-md overflow-hidden"
+                        data-te-carousel-init data-te-ride="carousel">
+                        <!-- Carousel control -->
+                        <div class="absolute w-full h-full">
+                            <!-- Carousel indicators -->
+                            <div class="absolute bottom-[5%] xl:bottom-[10%] inset-x-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                                data-te-carousel-indicators>
+                                <button data-te-target="#carouselDarkVariant" data-te-slide-to="0"
+                                    data-te-carousel-active
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button data-te-target="#carouselDarkVariant"
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    data-te-slide-to="1" aria-label="Slide 1"></button>
+                                <button data-te-target="#carouselDarkVariant"
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    data-te-slide-to="2" aria-label="Slide 1"></button>
+                                <button data-te-target="#carouselDarkVariant"
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    data-te-slide-to="3" aria-label="Slide 1"></button>
+                                <button data-te-target="#carouselDarkVariant"
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    data-te-slide-to="4" aria-label="Slide 1"></button>
+                                <button data-te-target="#carouselDarkVariant"
+                                    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                                    data-te-slide-to="5" aria-label="Slide 1"></button>
+                            </div>
+                            <!-- Carousel controls - prev item-->
+                            <button
+                                class="absolute h-[50px] text-black text-h1 bottom-[5%] xl:bottom-[10%] left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-gray-300 hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                                type="button" data-te-target="#carouselDarkVariant" data-te-slide="prev">
+                                <span class="inline-block h-8 w-8 dark:grayscale">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-10 w-10">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                            </button>
+                            <!-- Carousel controls - next item-->
+                            <button
+                                class="absolute h-[50px] text-black text-h1 bottom-[5%] xl:bottom-[10%] right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-gray-300 hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                                type="button" data-te-target="#carouselDarkVariant" data-te-slide="next">
+                                <span class="inline-block h-8 w-8 dark:grayscale">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-10 w-10">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                            </button>
+                        </div>
+                        <!-- Carousel items -->
+                        <div class="relative w-full after:clear-both after:block after:content-['']">
+                            <!-- First item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_sky.png"
+                                        alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acentgreen text-h1 font-semibold mr-2 xl:text-mega">Q2</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-h4 text-text font-bold leading-7">聽說ERP升級花錢、</p>
+                                            <p class="text-h4 text-text font-bold leading-7">花時間又花人力?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>找對顧問公司，東捷資訊將您所需的各項導入 <span class="text-acentgreen font-[900]">升級流程化繁為簡</span>
+                                        ，更快享有ERP升級效益。</p>
+                                </div>
+                            </div>
+                            <!-- Second item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-item>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_blue.png"
+                                        alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acentblue text-h1 font-semibold mr-2 xl:text-mega">Q3</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-h4 text-text font-bold leading-7">SAP ERP升級</p>
+                                            <p class="text-h4 text-text font-bold leading-7">有哪些部署方式?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>東捷資訊擁有深厚的ERP升級上雲經驗，讓您 <span
+                                            class="text-acentblue font-[900]">根據企業預算、規模及需求，選擇最適合的解決方案</span></p>
+                                </div>
+                            </div>
+                            <!-- Third item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-item>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0"
+                                        src="./assets/images/headline_box_yellow.png" alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega">Q4</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-h4 text-text font-bold leading-7">升級至SAP S/4HANA</p>
+                                            <p class="text-h4 text-text font-bold leading-7">的資料移轉哪些?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>採用SAP標準升級方式全新實施ERP系統升級， <span
+                                            class="text-acenttag font-[900]">重新整合所有業務流程資料</span>，發揮新版SAP S/4HANA最大效益。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Fourd item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-item>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_sky.png"
+                                        alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acentgreen text-h1 font-semibold mr-2 xl:text-mega">Q5</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-h4 text-text font-bold leading-7">ERP要建置</p>
+                                            <p class="text-h4 text-text font-bold leading-7">在地端還是雲端?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>ERP雲娣部署各有其優勢，東捷資訊以超過20年SAP ERP專業顧問導入經驗， <span
+                                            class="text-acentgreen font-[900]">提供企業完整業務流程改造建議。</span></p>
+                                </div>
+                            </div>
+                            <!-- Five item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-item>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0" src="./assets/images/headline_box_blue.png"
+                                        alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acentblue text-h1 font-semibold mr-2 xl:text-mega">Q6</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-h4 text-text font-bold leading-7">SAP S/4HANA的升級</p>
+                                            <p class="text-h4 text-text font-bold leading-7">建置費用包含哪些項目?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>雲地部署的費用項目根據企業規模及導入需求而異，東捷資訊提供ERP一條龍升級服務，確保 <span
+                                            class="text-acentblue font-[900]">新舊系統間的無縫整合</span></p>
+                                </div>
+                            </div>
+                            <!-- Third item -->
+                            <div class="relative w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-fade data-te-carousel-item data-te-carousel-item>
+                                <div class="relative w-full h-[100px] mb-5 sm:w-[400px]">
+                                    <img class="w-full h-full top-0 left-0"
+                                        src="./assets/images/headline_box_yellow.png" alt="tag">
+                                    <div class="absolute top-0 p-5 w-full h-full flex items-center">
+                                        <p class="text-acenttag text-h1 font-semibold mr-2 xl:text-mega">Q7</p>
+                                        <div class="border-l-2 border-text h-[50px] mr-2"></div>
+                                        <div>
+                                            <p class="text-body text-text font-bold leading-7">為什麼被原DR/Backup很重要?</p>
+                                            <p class="text-body text-text font-bold leading-7">如何進行SAP ERP的備援機制?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe
+                                    class="w-full max-w-[1056px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[520px] rounded-md"
+                                    height="200" src="https://www.youtube.com/embed/WjJZufaOv3o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="py-5 text-cente text-h4">
+                                    <p>企業永遠無法預期何時出現災難，為快速恢復並保持ERP系統運行，東捷資訊<span
+                                            class="text-acenttag font-[900]">提供專業BASIS顧問與雲服務團隊，協助歷史資料歸檔/備份/備援等服務</span>。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,7 +514,8 @@
         <div class="w-full h-[239px] relative flex justify-center mb-7 sm:w-1/2 sm:mb-0 sm:h-auto">
             <img class="w-full h-full sm:hidden" src="./assets/images/warnLeft.png" alt="action">
             <img class="w-full h-full hidden sm:block" src="./assets/images/warn.png" alt="desktopaction">
-            <div class="gloable-padding absolute w-full h-full top-20 text-white text-center sm:text-left sm:top-0 sm:flex sm:flex-col sm:justify-center">
+            <div
+                class="gloable-padding absolute w-full h-full top-20 text-white text-center sm:text-left sm:top-0 sm:flex sm:flex-col sm:justify-center">
                 <p class="text-h2 font-bold sm:text-h1">別讓您的企業落後，</p>
                 <p class="text-h1 font-bold sm:text-hmega">立即行動!</p>
             </div>
@@ -312,20 +534,26 @@
     <section id="email" class="w-full flex justify-center mt-5">
         <form class="gloable-padding w-[320px] sm:w-full" action="">
             <div class="flex flex-col">
-                <div class="sm:flex">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                <div class="sm:flex sm:justify-between">
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="company" id="company" placeholder="完整公司名稱">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="name" id="name" placeholder="姓名">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
                         type="tel" name="phone" id="phone" placeholder="聯絡電話">
                 </div>
-                <div class="sm:flex">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                <div class="sm:flex sm:justify-between">
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="email" name="email" id="email" placeholder="Email">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md sm:mr-5"
                         type="text" name="department" id="department" placeholder="部門">
-                    <input class="w-full sm:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
+                    <input
+                        class="w-full sm:w-[160px] lg:w-[450px] h-[50px] px-3 py-4 mb-2 border-text border-[1px] rounded-md"
                         type="text" name="job" id="job" placeholder="職稱">
                 </div>
             </div>
@@ -344,6 +572,7 @@
             </button>
         </form>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
 
 </html>

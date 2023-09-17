@@ -11,6 +11,8 @@ module.exports = {
         'acentred':'#C30D23',
         'acenttext':'#F39800',
         'acentbutton':'#F0BE2D',
+        'acentgreen':'#67BAC2',
+        'acentblue':'#6F9FD4',
         'text':'#595757'
       },
       fontFamily: {
