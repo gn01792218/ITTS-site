@@ -49,6 +49,9 @@
   .text-small{
     @apply text-[0.75rem]
   }
+  .text-super-small{
+    @apply text-[0.5rem]
+  }
 }
 
 /* 字型 */
