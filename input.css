@@ -6,50 +6,75 @@
 
 @layer utilities {
   /* padding */
-  .gloable-padding{
-    @apply px-7 xs:px-9 sm:px-14 md:px-24 xl:px-28 2xl:px-36
+  /* x軸左右對齊 */
+  .global-padding-x {
+    @apply px-7 xs:px-9 sm:px-14 md:px-14 lg:px-20 xl:px-28 2xl:px-36
   }
-  /* Typography systems - mobile*/
-  .text-mega-3xl{
+
+  /* 右邊對齊 */
+  .global-padding-r {
+    @apply pr-7 xs:pr-9 sm:pr-14 md:pr-14 lg:pr-20 xl:pr-28 2xl:pr-36
+  }
+
+  /* 左邊對齊 */
+  .global-padding-l {
+    @apply pl-7 xs:pl-9 sm:pl-14 md:pl-14 lg:pl-20 xl:pl-28 2xl:pl-36
+  }
+
+  /* Typography systems*/
+  .text-mega-3xl {
     @apply text-[5rem]
   }
-  .text-mega-2xl{
+
+  .text-mega-2xl {
     @apply text-[4.5rem]
   }
-  .text-mega-xl{
+
+  .text-mega-xl {
     @apply text-[3.5rem]
   }
-  .text-mega{
+
+  .text-mega {
     @apply text-[3rem];
   }
-  .text-h1{
+
+  .text-h1 {
     @apply text-[2.25rem]
   }
-  .text-h2{
+
+  .text-h2 {
     @apply text-[2rem]
   }
-  .text-h2-sm{
+
+  .text-h2-sm {
     @apply text-[1.65rem]
   }
-  .text-h3{
+
+  .text-h3 {
     @apply text-[1.5rem]
   }
-  .text-h4{
+
+  .text-h4 {
     @apply text-[1.3rem]
   }
-  .text-h5{
+
+  .text-h5 {
     @apply text-[1.15rem]
   }
-  .text-body{
+
+  .text-body {
     @apply text-[1rem]
   }
-  .text-body-sm{
+
+  .text-body-sm {
     @apply text-[0.85rem]
   }
-  .text-small{
+
+  .text-small {
     @apply text-[0.75rem]
   }
-  .text-super-small{
+
+  .text-super-small {
     @apply text-[0.5rem]
   }
 }
@@ -89,6 +114,3 @@
   font-family: 'NotoSansCJKtc-Thin';
   src: url('./assets/fonts/NotoSansCJKtc-Thin.otf') format('opentype');
 }
-
-
-
