@@ -8,17 +8,17 @@
   /* padding */
   /* x軸左右對齊 */
   .global-padding-x {
-    @apply px-7 xs:px-9 sm:px-14 md:px-14 lg:px-20 xl:px-28 2xl:px-36
+    @apply px-4 xxs:px-7 xs:px-9 sm:px-14 md:px-14 lg:px-20 xl:px-28 2xl:px-36
   }
 
   /* 右邊對齊 */
   .global-padding-r {
-    @apply pr-7 xs:pr-9 sm:pr-14 md:pr-14 lg:pr-20 xl:pr-28 2xl:pr-36
+    @apply pr-4 xxs:pr-7 xs:pr-9 sm:pr-14 md:pr-14 lg:pr-20 xl:pr-28 2xl:pr-36
   }
 
   /* 左邊對齊 */
   .global-padding-l {
-    @apply pl-7 xs:pl-9 sm:pl-14 md:pl-14 lg:pl-20 xl:pl-28 2xl:pl-36
+    @apply pl-4 xxs:pl-7 xs:pl-9 sm:pl-14 md:pl-14 lg:pl-20 xl:pl-28 2xl:pl-36
   }
 
   /* Typography systems*/

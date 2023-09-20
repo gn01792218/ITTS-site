@@ -25,6 +25,8 @@ module.exports = {
         notosnscjktcThin: ["NotoSansCJKtc-Thin"],
       },
       screens:{
+        'xxxxs':'280px',
+        'xxxs':'320px',
         'xxs':'375px',
         'xs':'414px'
       }
