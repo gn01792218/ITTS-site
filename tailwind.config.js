@@ -28,7 +28,8 @@ module.exports = {
         'xxxxs':'280px',
         'xxxs':'320px',
         'xxs':'375px',
-        'xs':'414px'
+        'xs':'414px',
+        'superxl':'1800px'
       }
     },
   },
