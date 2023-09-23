@@ -15,7 +15,8 @@
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 </head>
 
-<body class="font-notosnscjktcblack">
+<body id="body" class="font-notosnscjktcblack">
+    <button onclick="testFunction()">測試看看</button>
     <section class="relative w-full text-white text-h3 xxs:text-h2 font-[900] h-[700px] xl:h-[540px]">
         <!-- 背景圖 -->
         <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.jpg" alt="mobile-bg">
@@ -497,6 +498,11 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script>
+        function testFunction(){
+            const body = document.getElementById('body')
+            body.style.backgroundColor = 'red'
+            alert('我把背景變成紅色了謝謝')
+        }
         function submitHandler() {
             if (!document.getElementById("agree").checked) {
                 return alert('請先勾選同意隱私權聲明選項')
@@ -524,7 +530,7 @@
             // 打開郵件客戶端
             window.location.href = mailtoLink;
             //打開彈窗
-            // clickModalBtn()
+            clickModalBtn()
         }
         function clickModalBtn() {
             const button = document.getElementById('sendEmailModalBtn')
