@@ -498,9 +498,9 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script>
         function submitHandler() {
+            alert('test')
             if (!document.getElementById("agree").checked) {
-                alert('請先勾選同意隱私權聲明選項')
-                return false
+                return setTimeout(()=>alert('請先勾選同意隱私權聲明選項'),0)
             }
             const company = document.getElementById("company").value;
             const name = document.getElementById("name").value;
@@ -511,7 +511,7 @@
             const des = document.getElementById("des").value;
     
             if (!company || !name || !phone || !email || !department || !job || !des) {
-                return alert('所有欄位皆為必填')
+                return setTimeout(()=>alert('所有欄位皆為必填'),0)
             }
             if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
             // 建立郵件主題和內容
@@ -526,7 +526,6 @@
             window.location.href = mailtoLink;
             //打開彈窗
             clickModalBtn()
-    
         }
         function clickModalBtn() {
             const button = document.getElementById('sendEmailModalBtn')
