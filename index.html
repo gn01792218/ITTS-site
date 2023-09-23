@@ -523,44 +523,44 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
 <script>
-        alert('HI!!!')
-        function submitHandler() {
-            if (!document.getElementById("agree").checked) {
-                return alert('請先勾選同意隱私權聲明選項')
-            }
-            const company = document.getElementById("company").value;
-            const name = document.getElementById("name").value;
-            const phone = document.getElementById("phone").value;
-            const email = document.getElementById("email").value;
-            const department = document.getElementById("department").value;
-            const job = document.getElementById("job").value;
-            const des = document.getElementById("des").value;
-
-            if (!company || !name || !phone || !email || !department || !job || !des) {
-                return alert('所有欄位皆為必填')
-            }
-            if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
-            // 建立郵件主題和內容
-            const subject = encodeURIComponent("表單提交");
-            const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
-
-            // 使用mailto連結打開預設郵箱並填入資料
-            const recipients = "lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
-            const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
-
-            // 打開郵件客戶端
-            window.location.href = mailtoLink;
-            //打開彈窗
-            clickModalBtn();
+    function submitHandler() {
+        if (!document.getElementById("agree").checked) {
+            return alert('請先勾選同意隱私權聲明選項')
         }
-        function clickModalBtn() {
-            const button = document.getElementById('sendEmailModalBtn')
-            button.click();
-        }
-        function isValidEmail(email) {
-            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const company = document.getElementById("company").value;
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const department = document.getElementById("department").value;
+        const job = document.getElementById("job").value;
+        const des = document.getElementById("des").value;
 
-            return emailRegex.test(email);
+        if (!company || !name || !phone || !email || !department || !job || !des) {
+            return alert('所有欄位皆為必填')
         }
-    </script>
+        if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
+        // 建立郵件主題和內容
+        const subject = encodeURIComponent("表單提交");
+        const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
+
+        // 使用mailto連結打開預設郵箱並填入資料
+        const recipients = "lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
+        const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
+
+        // 打開郵件客戶端
+        window.location.href = mailtoLink;
+        //打開彈窗
+        clickModalBtn();
+    }
+    function clickModalBtn() {
+        const button = document.getElementById('sendEmailModalBtn')
+        button.click();
+    }
+    function isValidEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        return emailRegex.test(email);
+    }
+</script>
+
 </html>
