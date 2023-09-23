@@ -19,8 +19,7 @@
     <script>
         const b = document.body
         b.style.backgroundColor = 'red'
-    </script>
-    <script>
+        alert('HI~')
         function submitHandler() {
             if (!document.getElementById("agree").checked) {
                 return alert('請先勾選同意隱私權聲明選項')
@@ -48,7 +47,7 @@
             // 打開郵件客戶端
             window.location.href = mailtoLink;
             //打開彈窗
-            clickModalBtn()
+            clickModalBtn();
         }
         function clickModalBtn() {
             const button = document.getElementById('sendEmailModalBtn')
