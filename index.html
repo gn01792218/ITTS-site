@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <!-- Q1區塊的影片和文字說明 -->
-                <!-- <div class="flex flex-col xl:flex-row-reverse">
+                <div class="flex flex-col xl:flex-row-reverse">
                     <div
                         class="w-full h-[200px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden mb-10">
                         <iframe class="w-full h-full rounded-md xl:w-[500px] xl:h-[300px]" width="560" height="315"
@@ -215,9 +215,9 @@
                             </a>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <!-- Q2~Q7 -->
-                <!-- <ul class="w-full flex flex-col sm:flex-row sm:flex-wrap sm:justify-between">
+                <ul class="w-full flex flex-col sm:flex-row sm:flex-wrap sm:justify-between">
                     <li
                         class="w-full sm:w-[250px] md:w-[300px] lg:w-[280px] xl:w-[340px] 2xl:w-[380px] superxl:!w-[410px]">
                         <div class="relative w-full h-[100px] xl:h-[120px] mb-5">
@@ -361,7 +361,7 @@
                             </p>
                         </div>
                     </li>
-                </ul> -->
+                </ul>
             </div>
         </div>
     </section>
@@ -539,7 +539,7 @@
             if (!company || !name || !phone || !email || !department || !job || !des) {
                 return alert('所有欄位皆為必填')
             }
-            // if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
+            if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
             // 建立郵件主題和內容
             const subject = encodeURIComponent("表單提交");
             const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
