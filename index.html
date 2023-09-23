@@ -16,7 +16,6 @@
 </head>
 
 <body class="font-notosnscjktcblack">
-    
     <section class="relative w-full text-white text-h3 xxs:text-h2 font-[900] h-[700px] xl:h-[540px]">
         <!-- 背景圖 -->
         <img class="w-full h-full object-cover xl:hidden" src="./assets/images/mobile-banner.jpg" alt="mobile-bg">
@@ -558,10 +557,10 @@
             const button = document.getElementById('sendEmailModalBtn')
             button.click();
         }
-        // function isValidEmail(email) {
-        //     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?<!\.\.)$/;
+        function isValidEmail(email) {
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        //     return emailRegex.test(email);
-        // }
+            return emailRegex.test(email);
+        }
     </script>
 </html>
