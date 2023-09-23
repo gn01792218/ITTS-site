@@ -1337,15 +1337,6 @@ video {
   src: url('./assets/fonts/NotoSansCJKtc-Thin.otf') format('opentype');
 }
 
-.hover\:rounded-none:hover {
-  border-radius: 0px;
-}
-
-.hover\:bg-red-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 @media (prefers-color-scheme: dark) {
   .dark\:bg-neutral-600 {
     --tw-bg-opacity: 1;
