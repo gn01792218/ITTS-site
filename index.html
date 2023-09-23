@@ -540,11 +540,11 @@
         }
         if (!isValidEmail(email)) return alert('請檢查email格式是否符合正確規範')
         // 建立郵件主題和內容
-        const subject = encodeURIComponent("表單提交");
+        const subject = encodeURIComponent("SAP ERP升級諮詢表單提交");
         const body = encodeURIComponent(`公司名稱: ${company}\n姓名: ${name}\n聯絡電話: ${phone}\nEmail: ${email}\n部門: ${department}\n職稱: ${job}\n描述: ${des}`);
 
         // 使用mailto連結打開預設郵箱並填入資料
-        const recipients = "lena.liang@itts.com.tw,joan.chuang@itts.com.tw";
+        const recipients = "marketing@itts.com.tw";
         const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
 
         // 打開郵件客戶端
