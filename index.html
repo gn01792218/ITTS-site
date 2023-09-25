@@ -13,6 +13,21 @@
     <link href="https://fonts.googleapis.com/css？family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <!-- Event snippet for SAP_轉換 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10858368102/0IjoCP-xj-UYEOaY1rko',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 
 <body class="font-notosnscjktcblack">
